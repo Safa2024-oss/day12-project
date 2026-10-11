@@ -1,0 +1,111 @@
+.app {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: sans-serif;
+}
+
+.app h1 {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.controls select,
+.fav-toggle {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.fav-toggle {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fav-toggle.active {
+  background: #fff3b0;
+  border-color: #e6b800;
+}
+
+.count {
+  color: #888;
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 10px 12px 14px;
+}
+
+.card-body h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.card-body p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.star {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.star.active {
+  color: #ffd43b;
+}
+
+.status {
+  text-align: center;
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+
+.error {
+  color: #c00;
+}
